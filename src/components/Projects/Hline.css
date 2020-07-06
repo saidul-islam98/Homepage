@@ -1,0 +1,7 @@
+hr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FF2342; 
+    border-width: 1px solid black;
+}
