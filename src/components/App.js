@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import { Transition, TransitionGroup , CSSTransition } from 'react-transition-group';
-import { play, exit } from './Transition/Transition';
+// import { Transition, TransitionGroup , CSSTransition } from 'react-transition-group';
+// import { play, exit } from './Transition/Transition';
 import Home from './Home/Home';
 import Footer from './Footer/Footer';
 import NavBar from './NavBar/NavBar';
 import About from './About/About';
-import Blog from './Blog/Blog';
+// import Blog from './Blog/Blog';
 import Contact from './Contact/Contact';
 
 class App extends Component {
