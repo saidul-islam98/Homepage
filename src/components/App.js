@@ -12,7 +12,7 @@ import Contact from './Contact/Contact';
 class App extends Component {
   render() {
     return (
-      <Router>
+      <Router basename="/">
         <div className="app">
           <NavBar />
           {/* <Route render={({ location }) => {
@@ -29,11 +29,11 @@ class App extends Component {
               //     timeout={{enter: 750, exit: 150}}
               //   > */}
                   
-                    <Switch>
-                      <Route path="/" exact component={Home} />
-                      <Route path="/about" component={About}/>
-                      <Route path="/contact" component={Contact} />
-                    </Switch>
+              <Switch>
+                <Route path="/" exact component={Home}/>
+                <Route path="/about" component={About}/>
+                <Route path="/contact" component={Contact}/>
+              </Switch>
               {/* //   </CSSTransition>
               // {/* //   </Transition> */}
               {/* // </TransitionGroup>
