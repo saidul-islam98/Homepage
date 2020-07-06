@@ -2,5 +2,5 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid #FF2342;
+    border: 1px solid #FF2342;
 }
