@@ -31,6 +31,9 @@ const useStyles = theme => ({
     header: {
         color: "#000",
     },
+    indiCard: {
+        margin: "1rem 1.5rem"
+    }
 });
 
 class MOOC extends Component {
@@ -55,15 +58,16 @@ class MOOC extends Component {
                     </Grid> */}
                     {/* <Grid item xs={1} sm={1} className={classes.sideSpacer}>
                     </Grid> */}
-                    <Grid item xs={12} sm={3} className={classes.badgeCard}>
+                    <Grid item xs={12} sm={3} className={classes.indiCard}>
                         <IBMPr />
-                    </Grid>
-                    <Grid item xs={12} sm={3} className={classes.badgeCard}>
+                    </Grid> 
+                    
+                    <Grid item xs={12} sm={3} className={classes.indiCard}>
                         <AppliedDS />
-                    </Grid>
-                    <Grid item xs={12} sm={3} className={classes.badgeCard}>
+                    </Grid> 
+                    <Grid item xs={12} sm={3} className={classes.indiCard}>
                         <TFinPractice />
-                    </Grid>
+                    </Grid> 
                     
                     <Grid item xs={12} className={classes.spacer}>
                     </Grid>
