@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles, withStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
-import tfs from '../../assets/images/icons/TensorFlow in Practice Specialization.png';
+import ibm from '../../assets/images/icons/IBM specialization.png';
 import { Button } from '@material-ui/core';
 
 
@@ -9,7 +9,7 @@ const CustomButton = withStyles({
     root: {
         backgroundColor: "transparent",
         border: "1px solid #FF5D69",
-        marginLeft: "1rem",
+        marginLeft: "0.8rem",
         borderRadius: "0",
         color: "#19191B",
         cursor: "pointer",
@@ -19,7 +19,7 @@ const CustomButton = withStyles({
         lineHeight: "inherit",
         whiteSpace: "nowrap",
         overflow: "hidden",
-        padding: ".8rem 2rem .7rem",
+        padding: ".7rem 1rem .6rem 1rem",
         position: "relative",
         textTransform: "uppercase",
       fontFamily: [
@@ -53,34 +53,42 @@ const CustomButton = withStyles({
 
 const useStyles = makeStyles({
   root: {
-    height: 240,
+    height: 270,
+    width: 270,
     backgroundColor: "#F7F7F7",
+    margin: "2rem 0rem",
   },
   title: {
-    paddingLeft: "1rem",
+    marginLeft: "2rem",
+    marginRight: "0.5rem",
     fontSize: 14,
   },
   italic: {
     fontSize: 12,
     color: "#666",
-    margin: "0rem 5rem 0 5rem",
+    margin: "0rem 4rem 0 4rem",
     fontStyle: "italic",
   },
-  tfsimg: {
-    margin: "0.5rem 0rem 0rem 0.5rem",
+  ibmImg: {
+    margin: "0.5rem 3rem 0rem 5rem",
+    height: "7rem",
+    width: "7rem",
   }
 });
 
-export default function CertCard() {
+export default function IBMPr() {
   const classes = useStyles();
 
   return (
     <Card className={classes.root}>
-        <img src={tfs} alt="tfs certification" className={classes.tfsimg}/>
-        <p className={classes.title}>TensorFlow in Practice Specialization <br /> 
+        <img src={ibm} alt="ibm certification" className={classes.ibmImg}/>
+        <p className={classes.title}>IBM Data Science Specialization <br /> 
         <span className={classes.italic}>Issuer: Coursera</span></p>
-        <CustomButton variant="outlined" color="secondary" href="https://coursera.org/share/265fdb844edbcc567b9db3d9d1eac7df">
+        <CustomButton variant="outlined" color="secondary" href="https://coursera.org/share/1831b15b78af530c2e4a5f64840794c4">
             certification
+        </CustomButton>
+        <CustomButton variant="outlined" color="secondary" href="https://www.youracclaim.com/badges/04b45db7-8f9d-4ba0-b020-00d0d5bcf8f1/public_url">
+            badge
         </CustomButton>
     </Card>
   );
