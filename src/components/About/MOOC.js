@@ -27,12 +27,14 @@ const useStyles = theme => ({
         fontFamily: "Roboto",
         fontSize: "1.2rem",
         fontWeight: "bold",
+        marginLeft: "1rem",
+        marginRight: "1rem",
     },
     header: {
         color: "#000",
     },
     indiCard: {
-        margin: "1rem 1.5rem"
+        margin: "1rem 1.8rem"
     }
 });
 

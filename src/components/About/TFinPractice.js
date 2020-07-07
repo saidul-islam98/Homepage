@@ -54,7 +54,7 @@ const CustomButton = withStyles({
 
 const useStyles = makeStyles({
   root: {
-    height: 270,
+    height: 250,
     width: 270,
     backgroundColor: "#F7F7F7",
     margin: "2rem 0rem",
