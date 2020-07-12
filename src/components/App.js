@@ -7,7 +7,7 @@ import Home from './Home/Home';
 import Footer from './Footer/Footer';
 import NavBar from './NavBar/NavBar';
 import About from './About/About';
-// import Blog from './Blog/Blog';
+import Blog from './Blog/Blog';
 import Contact from './Contact/Contact';
 
 class App extends Component {
@@ -34,6 +34,7 @@ class App extends Component {
                 <Switch>
                   <Route path="/" exact component={Home}/>
                   <Route path="/about" component={About}/>
+                  <Route path="/blog" component={Blog}/>
                   <Route path="/contact" component={Contact}/>
                 </Switch>
                 {/* //   </CSSTransition>

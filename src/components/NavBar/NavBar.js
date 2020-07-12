@@ -103,13 +103,20 @@
 
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Toolbar, withStyles, Grid, SwipeableDrawer } from '@material-ui/core';
+import { Toolbar, withStyles, Grid, SwipeableDrawer, AppBar } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import logo from '../../assets/images/logo/saidulrbg.png';
 import { Link } from 'react-router-dom';
 import Resume from '../../assets/Documents/resume.pdf';
 
 const styleSheet = {
+    appBar: {
+        backgroundColor: "#FFF",
+        height: "7rem",
+        boxShadow: "none",
+        display: "flex",
+        justifyContent: "center",
+    },
     sideBarIcon : {
         padding : 0,
         height: "2.3rem",
@@ -140,6 +147,7 @@ const styleSheet = {
         padding: "1rem 1rem",
         fontSize: "1.3rem",
         fontFamily: "Ubuntu",
+        color: "#203139",
         '&:hover': {
             color: "#FF2342",
         },
@@ -219,7 +227,7 @@ createDrawer(){
   const {classes} = this.props
   return (
     <div>
-      {/* <AppBar > */}
+      <AppBar position="static" className={classes.appBar}>
         <Toolbar>
           <Grid container direction = "row" justify = "space-between" alignItems="center">
             <Link to="/" className={classes.linkTag}>
@@ -232,7 +240,7 @@ createDrawer(){
               onClick={()=>{this.setState({drawer:true})}} />
           </Grid>
         </Toolbar>
-      {/* </AppBar> */}
+      </AppBar>
 
       <SwipeableDrawer
         open={this.state.drawer}
@@ -268,7 +276,7 @@ destroyDrawer(){
 const {classes} = this.props
   return (
     <div>
-          {/* <AppBar position="static" className={classes.appBar}> */}
+          <AppBar position="static" className={classes.appBar}>
               <Grid container>
                   <Grid item xs={12}>
                       <Toolbar className={classes.toolbar}>
@@ -298,8 +306,7 @@ const {classes} = this.props
                       </Toolbar>
                   </Grid>
               </Grid>
-              {/* <Hamburger /> */}
-          {/* </AppBar> */}
+          </AppBar>
       </div>
   )
   }

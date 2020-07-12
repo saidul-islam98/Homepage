@@ -11,7 +11,7 @@ import bg4 from '../../assets/images/background-img/bg4rz.png';
 const useStyles = makeStyles((theme) => ({
     backgroundImg: {
         backgroundImage: `url(${bg4})`,
-        height: "38rem",
+        height: "42rem",
         backgroundAttachment: "contain",
         // marginLeft: "1rem",
         // marginRight: "1rem",
@@ -80,7 +80,7 @@ const Bgdtheme = () => {
             </Grid> */}
 
             <Parallax 
-                y={[-5, 20]} tagOuter="figure"
+                y={[-20, 20]} tagOuter="figure"
             >
                 {/* <img src={bg4} /> */}
                 <div className={classes.backgroundImg}>
