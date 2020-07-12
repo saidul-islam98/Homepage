@@ -90,7 +90,7 @@ const Bgdtheme = () => {
                             transition={{ type: 'spring', delay: 0.5, stiffness: 50 }}>
                         <h2 className={classes.descSpnName}>Hello! I'm</h2>
                         <h1 className={classes.descSpn}>Saidul</h1>
-                        <p className={classes.descCur}>An avid learner, as well as a <span className={classes.boldf}>Data Science</span> & <br/> <span className={classes.boldf}>Machine Learning</span> enthusiast</p>
+                        <p className={classes.descCur}>An avid learner, as well as a <span className={classes.boldf}>Data Science</span> & <br/> <span className={classes.boldf}>Machine Learning</span> enthusiast.</p>
                     </motion.div>
                 </div>
             </Parallax>
