@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { motion } from 'framer-motion';
 // import { Parallax } from 'react-parallax';
 import { Parallax } from 'react-scroll-parallax';
-import bg4 from '../../assets/images/background-img/bg4rz.png';
+import bg4 from '../../assets/images/background-img/bgrz.png';
 
 
 
@@ -12,11 +12,9 @@ const useStyles = makeStyles((theme) => ({
     backgroundImg: {
         backgroundImage: `url(${bg4})`,
         height: "42rem",
-        backgroundAttachment: "contain",
-        // marginLeft: "1rem",
-        // marginRight: "1rem",
+        // backgroundAttachment: "contain",
         backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
+        // backgroundSize: "cover",
         position: "relative",
         display: "flex",
         justifyContent: "center",
@@ -26,7 +24,6 @@ const useStyles = makeStyles((theme) => ({
     desc: {
         padding: "0",
         margin: "1rem 10rem 0rem 4rem",
-        // marginRight: "8.5rem",
         fontSize: "1rem",
         // lineHeight: "230%",
     }, 
@@ -55,7 +52,7 @@ const useStyles = makeStyles((theme) => ({
     },
     boldf: {
         fontWeight: "bold",
-    }
+    },
 }));
   
 
@@ -80,14 +77,14 @@ const Bgdtheme = () => {
             </Grid> */}
 
             <Parallax 
-                y={[-20, 20]} tagOuter="figure"
-            >
-                {/* <img src={bg4} /> */}
+                y={[-20, 20]} 
+                tagOuter="figure">
                 <div className={classes.backgroundImg}>
-                    <motion.div className={classes.desc}
-                            initial={{ x:'-100vw' }}
-                            animate={{ x:0 }}
-                            transition={{ type: 'spring', delay: 0.5, stiffness: 50 }}>
+                    <motion.div 
+                        className={classes.desc}
+                        initial={{ x:'-100vw' }}
+                        animate={{ x:0 }}
+                        transition={{ type: 'spring', delay: 0.5, stiffness: 50 }}>
                         <h2 className={classes.descSpnName}>Hello! I'm</h2>
                         <h1 className={classes.descSpn}>Saidul</h1>
                         <p className={classes.descCur}>An avid learner, as well as a <span className={classes.boldf}>Data Science</span> & <br/> <span className={classes.boldf}>Machine Learning</span> enthusiast.</p>
